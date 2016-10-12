@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,IE=Edge, chrome=1"
+          http-equiv="X-UA-Compatible"/>
+    <title>列车时刻表查询</title>
+    <link rel="stylesheet" href="scripts/vendor/jQuery-mobile/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<div data-role="page" id="index">
+    <div data-role="header" data-position="fixed">
+        <h2>列车时刻表查询</h2>
+    </div>
+    <div data-role="content">
+        <form action="#">
+            <div class="ui-field-contain">
+                <label for="search-begin">发车站</label>
+                <input type="text" id="search-begin" name="start">
+            </div>
+            <div class="ui-field-contain">
+                <label for="search-end">到达站</label>
+                <input type="text" id="search-end" name="arrive">
+            </div>
+            <div class="ui-field-contain">
+                <label for="search-nu">车次</label>
+                <input type="text" id="search-nu" name="che">
+            </div>
+        </form>
+        <a href="#" id="search-submit" class="ui-btn">搜索</a>
+        <ul data-role="listview" data-inset="true" id="list">
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="carat-l">导航1</a></li>
+                <li><a href="#" data-icon="bars">导航1</a></li>
+                <li><a href="#" data-icon="carat-r">导航1</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="index1">
+    <div data-role="header">
+        <h2>列车车次详情</h2>
+    </div>
+    <div data-role="content">
+        <table data-role="table" data-mode="reflow" class="ui-responsive table-stroke">
+            <thead>
+                <tr>
+                    <th>第一列</th>
+                    <th>第二列</th>
+                    <th>第三列</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>456</td>
+                    <td>789</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>456</td>
+                    <td>789</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div data-role="footer">
+       <div data-role="navbar">
+           <ul>
+               <li><a href="#index" data-transition="slide" data-icon="carat-l">导航栏1</a></li>
+               <li><a href="#" data-icon="bars">导航栏2</a></li>
+               <li><a href="#" data-icon="carat-r">导航栏3</a></li>
+           </ul>
+       </div>
+    </div>
+</div>
+<script src="scripts/vendor/jquery/jquery.js"></script>
+<script src="scripts/vendor/jQuery-mobile/jquery.mobile-1.4.5.js"></script>
+<script src="scripts/controller/index.js"></script>
+<script src="scripts/controller/text.js"></script>
+</body>
+</html>
